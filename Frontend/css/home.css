@@ -1,0 +1,30 @@
+/* Home.css*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #000;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

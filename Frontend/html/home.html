@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - CineGestión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="CineGestión Logo" width="40">
+            </a>
+            <div class="d-flex ms-auto">
+                <button class="btn btn-outline-info me-2">Ubicación</button>
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Sucursal
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Sucursal 1</a></li>
+                        <li><a class="dropdown-item" href="#">Sucursal 2</a></li>
+                    </ul>
+                </div>
+                <img src="img/avatar.png" alt="Usuario" class="ms-3" width="40" style="border-radius: 50%;">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de Novedades -->
+    <section class="container my-4">
+        <h2 class="text-center mb-4">Novedades</h2>
+        <div id="carouselNovedades" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/interstellar.jpg" class="d-block w-100 rounded" alt="Interstellar">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/maleficent.jpg" class="d-block w-100 rounded" alt="Maleficent">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/godzilla.jpg" class="d-block w-100 rounded" alt="Godzilla vs Kong">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovedades" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselNovedades" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Cartelera -->
+    <section class="container mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Cartelera</h2>
+            <div>
+                <button class="btn btn-outline-light me-2">Buscar</button>
+                <button class="btn btn-outline-info">Filtrar</button>
+            </div>
+        </div>
+
+        <div class="row" id="carteleraContainer">
+            <!-- Ejemplo estático -->
+            <div class="col-md-3 mb-4">
+                <div class="card h-100">
+                    <img src="img/spiderman.jpg" class="card-img-top" alt="Spider-Man">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark">B</span>
+                        <h5 class="card-title">El sorprendente hombre-araña</h5>
+                        <a href="#" class="text-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite para más películas -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Luces, cámara...¡Acción!</h5>
+                </div>
+                <div class="col-md-3">
+                    <p><a href="#">¿Quiénes somos?</a><br><a href="#">Conócenos</a></p>
+                </div>
+                <div class="col-md-3">
+                    <p><a href="#">Avisos de privacidad</a><br><a href="#">Términos y condiciones</a></p>
+                </div>
+                <div class="col-md-3">
+                    <p><a href="#">Quejas y comentarios</a><br><a href="#">Ayuda</a><br>Tel. 55 10 89 23 33</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/home.js"></script>
+
+    <!-- Estructura dinámica de cartelera (simulada en JS)
+    <script>
+    // const cartelera = [
+    //     { titulo: "Avatar", clasificacion: "B", imagen: "img/avatar.jpg" },
+    //     { titulo: "Shrek", clasificacion: "A", imagen: "img/shrek.jpg" }
+    // ];
+
+    // const container = document.getElementById('carteleraContainer');
+    // container.innerHTML = '';
+    // cartelera.forEach(pelicula => {
+    //     container.innerHTML += `
+    //         <div class="col-md-3 mb-4">
+    //             <div class="card h-100">
+    //                 <img src="${pelicula.imagen}" class="card-img-top" alt="${pelicula.titulo}">
+    //                 <div class="card-body">
+    //                     <span class="badge bg-warning text-dark">${pelicula.clasificacion}</span>
+    //                     <h5 class="card-title">${pelicula.titulo}</h5>
+    //                     <a href="#" class="text-primary">Ver más</a>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     `;
+    // });
+    </script>
+    -->
+</body>
+</html>
