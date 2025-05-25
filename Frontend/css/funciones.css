@@ -1,0 +1,29 @@
+body, html {
+    background-color: #1e1e1e;
+    color: rgb(20, 19, 38);
+}
+
+.funciones-page {
+    min-height: 100vh;
+}
+
+.breadcrumb a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #15122a;
+    text-decoration: underline;
+}
+
+.horario-btn {
+    width: 100px;
+    height: 60px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.movie-info {
+    color: #000;
+}
